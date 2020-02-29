@@ -1,0 +1,80 @@
+/* header */
+.App{
+  max-height: 100vh;
+  min-height: 100vh;
+}
+.App-header {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #282c34;
+  color: white;
+  padding: 1em 2em 1em 3em;
+  min-height: 15vh;
+}
+.App-header img{
+  width: 48px;
+  height: 48px;
+  display: flex;
+}
+
+.li{
+  margin: 20px;
+}
+.menu ul{
+  list-style: none;
+}
+.menu a{
+  color: #ffffff;
+  text-decoration: none;
+}
+/* main */
+.content{
+    margin: 2em auto;
+    text-align: center;
+    min-height: 66vh;
+}
+.main{
+  margin: 2em;
+  text-align: center;
+  min-height: 66vh;
+}
+.price{
+  display: flex;
+  margin-top: 3em;
+  justify-content: space-around;
+}
+.course{
+  border: 1px solid black;
+  padding: 2em;
+  border-radius: 7px;
+  background-color: #282c34;
+  color: white;
+}
+/* footer */
+.footer{
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  justify-content: center;
+  min-height: 5vh;
+}
+.b a{
+  color: #ffffff;
+  text-decoration: none;
+}
+.b{
+  background: #282c34;
+  margin: 10em;
+  padding: 1em 5em;
+  border-radius: 10px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.buy{
+  border: 1px solid black;
+  padding: 2em;
+  margin: 2em auto;
+  width: 50%;
+  background: #282c34;
+  color: #ffffff;
+}
