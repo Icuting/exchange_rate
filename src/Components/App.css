@@ -78,3 +78,13 @@
   background: #282c34;
   color: #ffffff;
 }
+.about{
+  border: 1px solid black;
+  margin: 3em auto;
+  width: 50%;
+  text-align: center;
+  background: #282c34;
+  color: #ffffff;
+  padding: 1em;
+  border-radius: 10px;
+}

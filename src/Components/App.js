@@ -5,6 +5,7 @@ import Footer from './Cours/Footer';
 import Header from './Cours/Header';
 import {BrowserRouter, Route} from 'react-router-dom';
 import Calculate from './Calc/Calculate';
+import About from './about/About';
 
 const nav = {
   main : "курсы валют",
@@ -27,9 +28,10 @@ class App extends React.Component{
 getCourse=()=>{
     fetch('https://api.exchangeratesapi.io/latest')
     .then( data => {
-        return data.json()
+      return data.json()
     })
     .then( data => {
+      console.log(data)
         this.setState({
             time: data.date,
             USD: data.rates.USD,
@@ -48,6 +50,7 @@ getCourse=()=>{
       <div className='content'>
           <Route exact  path='/calc' render={ () => <Calculate state={this.state} />} />
           <Route path='/main' render={ () => <Main state={this.state} />} />
+          <Route path='/about' render={ () => <About />} />
       </div>
       <Footer />
     </div>
