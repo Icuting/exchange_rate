@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import {NavLink} from 'react-router-dom';
+import logo from '../../image/logo.png';
 
 class Header extends React.Component{
     constructor(props){
@@ -9,7 +10,7 @@ class Header extends React.Component{
     render(){
         return(
         <header className="App-header">
-            <img src='https://icon-icons.com/icons2/516/PNG/48/cash_icon-icons.com_51090.png'/>
+            <img className="logo" src={logo}/>
             <div className="menu">
                 <ul>
                     <NavLink className='li' to='/main'>Главная</NavLink>
